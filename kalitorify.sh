@@ -4,11 +4,11 @@
 #                                                                              #
 # kalitorify.sh                                                                #
 #                                                                              #
-# version: 1.29.0                                                              #
+# version: 1.29.1                                                             #
 #                                                                              #
 # Kali Linux - Transparent proxy through Tor                                   #
 #                                                                              #
-# Copyright (C) 2015-2022 brainf+ck                                            #
+# Copyright (C) 2015-2022 brainf+ck, 2024 yrjo                                         #
 #                                                                              #
 # Kalitorify is KISS version of Parrot AnonSurf Module of Parrot OS:           #
 # - https://www.parrotsec.org                                                  #
@@ -37,9 +37,9 @@
 #
 # program information
 readonly prog_name="kalitorify"
-readonly version="1.29.0"
-readonly signature="Copyright (C) 2022 brainf+ck"
-readonly git_url="https://github.com/brainfucksec/kalitorify"
+readonly version="1.29.1"
+readonly signature="Copyright (C) 2022 brainf+ck; 2024 yrjo"
+readonly git_url="https://github.com/yrjo/kalitorify"
 
 # set colors for stdout
 export red="$(tput setaf 1)"
@@ -292,9 +292,10 @@ check_ip() {
 
     # IP API URLs list
     local url_list=(
-        'https://ipinfo.io/'
-        'https://api.myip.com/'
-        'https://ifconfig.me'
+       'https://icanhazip.com/'
+       'https://api.ipify.org/'
+       'https://myip.dnsomatic.com/'
+       'https://checkip.amazonaws.com/'
     )
 
     info "Check public IP address"
