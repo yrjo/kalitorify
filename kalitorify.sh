@@ -82,7 +82,7 @@ printf "${b}${white}
                                 |___| v${version}
 
 =[ Transparent proxy through Tor
-=[ brainfucksec
+=[ brainfucksec ++ yrjo
 ${reset}\\n\\n"
 }
 
